@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To-Do App</title>
+  </head>
+  <body class="min-h-screen flex justify-center items-center">
+    <div class="w-96 bg-[#d6d6d6] rounded-b flex flex-col space-y-2 justify-center py-5 my-24">
+        <div class="relative bottom-6 w-full h-2 bg-gradient-to-r from-[#800080] via-[#4169e1] to-[#913175]"></div>
+        <h1 class="font-bold px-8 text-xl">In Progress</h1>
+        <!-- TODO Card -->
+        <div class="flex flex-col space-y-3 p-4 ">
+            <div class="flex flex-row rounded-xl hover:scale-105 cursor-pointer p-3 w-full  bg-white shadow focus:scale-105 duration-300 transition-all ease-in-out  space-x-5">
+                <div class="w-[20%] ">
+                    <img class="w-full rounded-full shadow-xl shadow-blue-300 h-16 object-contain" src="https://www.yext.co.uk/wp-content/uploads/sites/4/2018/10/uber.png" alt="">
+                </div>
+                <div class="flex flex-col space-y-2 w-full">
+                    <div class="flex flex-row justify-between w-full">
+                        <button class="bg-red-500 rounded text-white px-2 py-1 text-xs">High</button>
+                        <h2 class="text-sm">18 Dec.2022</h2>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <h1 class="text-md font-bold text-blue-700 cursor-pointer  duration-300 transition-all ease-in-out hover:underline">Prepare structural documentation</h1>
+                        <div class="flex flex-row space-x-3">
+                            <button class="px-4 py-0  bg-gray-300 text-xs rounded">Development</button>
+                            <button class="px-4 py-0 bg-gray-300 text-xs rounded">Architecture</button>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                  </svg>                                  
+                                <p class="text-xs">3 people work on this</p>
+                            </div>
+                            <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                  </svg>                                  
+                                <p class="text-xs">
+                                    17 comments
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col space-y-3 p-4">
+            <div class="flex flex-row rounded-xl hover:scale-105 cursor-pointer p-3 w-full  bg-white shadow focus:scale-105 duration-300 transition-all ease-in-out  space-x-5">
+                <div class="w-[20%] rounded-full">
+                    <img class="w-full h-16 p-1 shadow-xl shadow-blue-300 object-contain rounded-full" src="https://www.freepnglogos.com/uploads/bosch-logo/simple-brand-bosch-logo-3d-download-png-14.jpg" alt="">
+                </div>
+                <div class="flex flex-col space-y-2 w-full">
+                    <div class="flex flex-row justify-between w-full">
+                        <button class="bg-blue-500 rounded text-white px-2 py-1 text-xs">Medium</button>
+                        <h2 class="text-sm">18 Dec.2022</h2>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <h1 class="text-md font-bold text-blue-700 cursor-pointer  duration-300 transition-all ease-in-out hover:underline">Update requirements list</h1>
+                        <div class="flex flex-row space-x-3">
+                            <button class="px-4 py-0  bg-gray-300 text-xs rounded">Development</button>
+                            <button class="px-4 py-0 bg-gray-300 text-xs rounded">Management</button>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                  </svg>                                  
+                                <p class="text-xs">2 people work on this</p>
+                            </div>
+                            <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                  </svg>                                  
+                                <p class="text-xs">
+                                    7 comments
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <div class="flex flex-col space-y-3 p-4">
+            <div class="flex flex-row rounded-xl hover:scale-105 cursor-pointer p-3 w-full  bg-white shadow focus:scale-105 duration-300 transition-all ease-in-out  space-x-5">
+                <div class="w-[20%] rounded-full">
+                    <img class="w-16 h-16 p-1 shadow-xl shadow-blue-300 object-contain rounded-full" src="https://www.freepnglogos.com/uploads/bosch-logo/simple-brand-bosch-logo-3d-download-png-14.jpg" alt="">
+                </div>
+                <div class="flex flex-col space-y-2 w-full">
+                    <div class="flex flex-row justify-between w-full">
+                        <button class="bg-blue-500 rounded text-white px-2 py-1 text-xs">Medium</button>
+                        <h2 class="text-sm">18 Dec.2022</h2>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <h1 class="text-md font-bold text-blue-700 cursor-pointer  duration-300 transition-all ease-in-out hover:underline">New UI Deshboard</h1>
+                        <div class="flex flex-row space-x-3">
+                            <button class="px-4 py-0  bg-gray-300 text-xs rounded">Development</button>
+                            <button class="px-4 py-0 bg-gray-300 text-xs rounded">Architecture</button>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                  </svg>                                  
+                                <p class="text-xs">7 people work on this</p>
+                            </div>
+                            <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                  </svg>                                  
+                                <p class="text-xs">
+                                    7 comments
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col space-y-3 p-4">
+            <div class="flex flex-row rounded-xl hover:scale-105 cursor-pointer p-3 w-full  bg-white shadow focus:scale-105 duration-300 transition-all ease-in-out  space-x-5">
+                <div class="w rounded-full">
+                    <img class=" w-16 h-16 p-1 shadow-xl shadow-blue-300 object-contain rounded-full" src="https://1000logos.net/wp-content/uploads/2019/06/Adidas-Logo-1991.jpg" alt="">
+                </div>
+                <div class="flex flex-col space-y-2 w-full">
+                    <div class="flex flex-row justify-between w-full">
+                        <button class="bg-green-500 rounded text-white px-2 py-1 text-xs">Low</button>
+                        <h2 class="text-sm">18 Dec.2022</h2>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <h1 class="text-md font-bold text-blue-700 cursor-pointer  duration-300 transition-all ease-in-out hover:underline">Initial ladning page concepts</h1>
+                        <div class="flex flex-row space-x-3">
+                            <button class="px-4 py-0  bg-gray-300 text-xs rounded">Development</button>
+                            <button class="px-4 py-0 bg-gray-300 text-xs rounded">Architecture</button>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                  </svg>                                  
+                                <p class="text-xs">4 people work on this</p>
+                            </div>
+                            <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                  </svg>                                  
+                                <p class="text-xs">
+                                    2 comments
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <form action="POST">
+        <div id="todo" class="hidden flex flex-col space-y-3 p-4">
+            <div class="flex flex-row rounded-xl  cursor-pointer p-3 w-full  bg-white shadow focus:scale-105 duration-300 transition-all ease-in-out  space-x-5">
+                <div class="w rounded-full">
+                    <img class=" w-16 h-16 p-1 shadow-xl shadow-blue-300 object-contain rounded-full" src="https://cdn-icons-png.flaticon.com/512/2387/2387679.png" alt="">
+                </div>
+                <div class="flex flex-col space-y-2 w-full">
+                    <div class="flex flex-row justify-between w-full">
+                        <input type="text" placeholder="priority" class="w-24 border border-blue-500 focus:outline-none text-black h-5 rounded  px-2 py-1 text-xs"></input>
+                        <input type="date" class="w-24 focus:outline-none h-5 text-sm"></input>
+                    </div>
+                    <div class="flex flex-col space-y-4">
+                        <input type="text" placeholder="Task" class="focus:outline-none border border-blue-400 px-2 rounded text-md font-bold text-blue-700 cursor-text  duration-300 transition-all ease-in-out "></input>
+                        <div class="flex flex-row space-x-3">
+                            <input placeholder="type" class="px-2 focus:outline-white text-gray-400 h-4 py-1 w-24  bg-gray-300 text-xs rounded"></input>
+                            <input placeholder="type" class="px-2 focus:outline-white text-gray-400 h-4 py-1 w-24 bg-gray-300 text-xs rounded"></input>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row items-center justify-center space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                  </svg>                                  
+                                <input class="text-xs  border black focus:outline-none" placeholder="People assigned"></input>
+                            </div>
+                            <!-- <div class="flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                  </svg>                                  
+                                <p class="text-xs">
+                                    2 comments
+                                </p> 
+                            </div> -->
+                            <button type="submit" class="bg-blue-700 px-2 py-1 text-sm rounded text-white hover:scale-105 ">Add+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+        <div id="btn" class="mt-4 mb-16 mx-auto ">
+            <button class="cursor-pointer text-gray-400 hover:underline">
+                + Add new card
+            </button>
+        </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
